@@ -39,5 +39,10 @@ button{
     width:40px;
 }
 .timer{
-    
+    border: 7px solid #13353a;
+    margin:20px auto 10px auto;
+    width:500px;
+    height:160px;
+    border-radius:50px;
+    position:relative;
 }
