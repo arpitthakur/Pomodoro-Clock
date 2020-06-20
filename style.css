@@ -33,5 +33,11 @@ button{
     cursor:pointer;
 }
 .btn-level,.length-control {
-    display:inline-block
+    display:inline-block;
+}
+.btn-level:nth-child(3) {
+    width:40px;
+}
+.timer{
+    
 }
