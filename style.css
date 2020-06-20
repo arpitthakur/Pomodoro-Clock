@@ -32,3 +32,6 @@ button{
     color:white;
     cursor:pointer;
 }
+.btn-level,.length-control {
+    display:inline-block
+}
