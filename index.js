@@ -81,5 +81,9 @@ function pause(){
      status.textContent = `${timeInput.value}:00`;
      enableElements();
  }
+ playBtn.addEventListener('click',event => {
+     event.preventDefault();
+     play();
+ });
         
     
