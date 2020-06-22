@@ -26,3 +26,7 @@ function checkTimeInput() {
       event.preventDefault();
       checkTimeInput() ? timeInput.value++ : alertMsg();
     } );
+    minusBtn.addEventListener ('click',event => {
+        event.preventDefault();
+        checkTimeInput() ? timeInput.value-- :alertMsg();
+    } );
