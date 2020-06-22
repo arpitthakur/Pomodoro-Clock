@@ -30,3 +30,8 @@ function checkTimeInput() {
         event.preventDefault();
         checkTimeInput() ? timeInput.value-- :alertMsg();
     } );
+    function enableElements () {
+        timeInput.removeAttribute('disabled');
+        plusBtn.style.display = "";
+        minusBtn.style.display = "";
+    }
