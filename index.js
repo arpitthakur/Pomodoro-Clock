@@ -74,6 +74,12 @@ function pause(){
         clearInterval(interval);
     }
 }
- 
+ function stop (){
+     clearInterval(interval);
+     remainingSeconds=0;
+     currentState = 'stop';
+     status.textContent = `${timeInput.value}:00`;
+     enableElements();
+ }
         
     
