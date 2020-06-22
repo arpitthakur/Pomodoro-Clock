@@ -49,3 +49,26 @@ function checkTimeInput() {
             alarmAudio.play();
         }
     } 
+    function play(){
+        if (currentState === 'stop')
+        {
+            if(checkTimeInput())
+        {
+            remainingSeconds = timeInput.value * 60;
+            interval = setInterval(countDown,1000);
+      disableElements();
+      currentState = 'play';
+    }
+    else
+      alertMsg();
+  }
+  else if(currentState=='pause') {
+    disableElements();
+    interval = setInterval(countDown,1000);
+    currentState = 'play';
+  } 
+}
+
+ 
+        
+    
