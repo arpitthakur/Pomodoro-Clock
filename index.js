@@ -4,7 +4,7 @@ let status = document.getElementById('status');
 const playBtn = document.getElementById('play-btn');
 const pauseBtn = document.getElementById('pause-btn');
 const stopBtn = document.getElementById('stop-btn');
-const alarmAudio = doccument.getElementById('myAudio');
+const alarmAudio = document.getElementById('myAudio');
 let remainingSeconds;
 let currentState="stop";
 let interval;

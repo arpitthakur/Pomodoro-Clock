@@ -1,43 +1,45 @@
-<!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/dab7c098a7.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="style.css">
-  <title>Pomodoro Clock</title>
-</head>
-<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/dab7c098a7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Pomodoro Clock</title>
+  </head>
+  
+  <body>
     <div id="app">
-        <div>
-            <h1>Pomodoro Clock</h1>
-        </div>
-        <div>
-            <h3>Session length</h3>
-        </div>
-        <div>
-            <span><a id = "minus-btn"href=""><i class="fas fa-arrow-up"></i>
-            </a>
-        </span>
-        <span><input id ="input-number"type="text"placeholder="Enter minutes"min="1"required="required"> </span>
-        <span><a id = "plus-btn"href=""><i class="fas fa-arrow-down"></i></a></span>
-    </div>
-    <div>
+      
+      <div>
+        <h1>Pomodoro Clock</h1>
+      </div>
+  
+      <div>
+        <h3>Session length</h3>
+      </div>
+  
+      <div>
+        <span><a  id = "minus-btn" href=""><i class="fas fa-arrow-up"></i></a></span>
+        <span><input  id="input-number"  type="text" placeholder="Enter minutes" min="1" required="required" ></span>
+        <span><a id = "plus-btn" href=""><i class="fas fa-arrow-down"></i></a></span>
+      </div>
+      
+      <div>
         <h2 id="timer">
-            <span id="status">00:00</span>
+          <span id="status">00:00</span>
         </h2>
-    </div>
-    <div>
-        <span><a id ="play-btn"href=""><i class="fas fa-play-circle"></i></a></span>
-            <span><a id = "pause-btn"href=""><i class="fs fa-pause-circle"></i></a>
-                <span><a id="stop-btn"href=""><i class="fas fa-stop-circle"></i></a></span>
-            </div>
-
-
+      </div>
+  
+      <div>
+        <span><a  id= "play-btn" href=""><i  class="fas fa-play-circle"></i></a></span>
+        <span><a  id= "pause-btn" href=""><i class="fas fa-pause-circle"></i></a></span>
+        <span><a  id= "stop-btn" href=""><i class="fas fa-stop-circle"></i></a></span>
+      </div>
+  
     </div>
     <audio id="myAudio">
-        <source src="alarm.mp3" type="audio/mpeg">
-      </audio>
-      <script src = "index.js"></script>
-</body>
-</html>
+      <source src="alarm.mp3" type="audio/mpeg">
+        <script src = "index.js"></script>
+    </audio>
+    </body>
+    </html>
