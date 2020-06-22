@@ -35,3 +35,9 @@ function checkTimeInput() {
         plusBtn.style.display = "";
         minusBtn.style.display = "";
     }
+    function disableElements () {
+        timeInput.setAttribute("disabled",'');
+        plusBtn.style.display = "none";
+        minusBtn.style.display = "none";
+    }
+    
