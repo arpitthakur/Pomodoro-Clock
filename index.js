@@ -40,4 +40,12 @@ function checkTimeInput() {
         plusBtn.style.display = "none";
         minusBtn.style.display = "none";
     }
-    
+    function countDown(){
+        remainingSeconds--;
+        `${Math.floor(remainingSeconds/60)}:${convertToTimeFormat(remainingSeconds % 60)}`;
+        if (remainingSeconds === 0) {
+            stop();
+            status.textContent = "Time's Up!";
+            alarmAudio.play();
+        }
+    } 
