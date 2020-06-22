@@ -11,3 +11,11 @@ let interval;
 function alertMsg () {
     alert('Invalid Input, Please Enter only digits than zero');
 }
+function checkTimeInput() {
+    return timeInput.value.toString().split('').reduce((valid , element) => {
+      return valid && (element >= '0' && element <= '9');
+    },true) 
+    && timeInput.value.toString().length>0 
+    && timeInput.value > 0;
+  }
+  
