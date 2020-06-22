@@ -68,7 +68,12 @@ function checkTimeInput() {
     currentState = 'play';
   } 
 }
-
+function pause(){
+    if (currentState === 'play') {
+        currentState = 'pause';
+        clearInterval(interval);
+    }
+}
  
         
     
