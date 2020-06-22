@@ -85,5 +85,13 @@ function pause(){
      event.preventDefault();
      play();
  });
+ pauseBtn.addEventListener('click',event => {
+     event.preventDefault();
+     pause();
+ });
+ stopBtn.addEventListener('click',event => {
+     event.preventDefault();
+     stop();
+ });
         
     
