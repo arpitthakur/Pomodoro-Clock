@@ -18,4 +18,7 @@ function checkTimeInput() {
     && timeInput.value.toString().length>0 
     && timeInput.value > 0;
   }
-  
+  function convertToTimerFormat (input) {
+      if (input < 10)return '0' + input;
+      return input;
+  }
