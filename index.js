@@ -22,3 +22,7 @@ function checkTimeInput() {
       if (input < 10)return '0' + input;
       return input;
   }
+  plusBtn.addEventListener ('click',event => {
+      event.preventDefault();
+      checkTimeInput() ? timeInput.value++ : alertMsg();
+    } );
